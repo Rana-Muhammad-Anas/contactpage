@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-label {
+  @apply mb-1 block text-sm font-medium text-gray-700;
+}
+
+.form-input {
+  @apply w-full rounded-md border border-gray-300 px-3 py-2
+         text-sm outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 1;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background: #fff;
+  transition: 0.4s;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.9em;
+  width: 1.9em;
+  border-radius: 16px;
+  left: 1.2px;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px #999999;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #5fdd54;
+  border: 1px solid transparent;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
