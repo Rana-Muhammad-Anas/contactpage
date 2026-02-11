@@ -1,8 +1,9 @@
-import { useState } from "react";
-import InfoCard from "./Componet/InfoCard";
+// import InfoCard from "./Componet/InfoCard";
+import AboutUs from "./Componet/AboutUs";
 
 function App() {
-  return <InfoCard />;
+  // return <InfoCard />;
+  return <AboutUs />;
 }
 
 export default App;
